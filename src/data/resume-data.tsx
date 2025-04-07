@@ -1,240 +1,140 @@
-import {
-  ClevertechLogo,
-  ConsultlyLogo,
-  JojoMobileLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-} from "@/images/logos";
+
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+  name: "Manuel Galindez",
+  initials: "MG",
+  location: "Bogotá, Colombia, CO",
+  locationLink: "https://www.google.com/maps/place/Bogotá",
+  about: "Frontend and React Native developer.",
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+      Frontend-focused developer with 7+ years of experience building web and
+      mobile applications. Passionate about performance, accessibility, and user
+      experience. Strong advocate for remote work and open source software.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/12010942?v=4",
+  personalWebsiteUrl: "https://jgalianoz-website.vercel.app/",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "jgalianoz.dev@gmail.com",
+    tel: "+57 319 717 5522",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/jgalianoz",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/jgalianoz/",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://x.com/jgalianoz",
         icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: 'UPTP "JJ Montilla"',
+      degree: "Advanced technician degree in informatics",
+      start: "2015",
+      end: "2017",
+    },
+    {
+      school: "Platzi",
+      degree: "Frontend Developer",
+      start: "2016",
+      end: "2017",
     },
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      logo: ConsultlyLogo,
-      start: "2024",
-      end: null,
-      description: (
-        <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "Monoku",
+      link: "https://monoku.com",
       badges: [
         "Remote",
         "React",
+        "Next.js",
         "TypeScript",
         "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
+        "AI",
+        "React Native",
       ],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      title: "Frontend Developer",
+      logo: "ConsultlyLogo",
+      start: "2017",
+      end: null,
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+          Led teams and contributed to the success of various projects for
+          clients across diverse industries. My responsibilities include:
           <ul className="list-inside list-disc">
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
+              Coordinating development teams to ensure efficient and
+              high-quality project deliveries.
             </li>
             <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
+              Developing modern, scalable user interfaces using technologies
+              like React and Remix.
             </li>
             <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+              Mentoring developers, fostering technical and professional growth.
+            </li>
+            <li>
+              Optimizing applications to maximize performance and enhance user
+              experience.
+            </li>
+            <li>
+              Collaborating with cross-functional teams to define and implement
+              technical solutions.
+            </li>
+            <li>
+              Integrating backend solutions with tools like Node.js and REST
+              APIs.
+            </li>
+            <li>
+              Applying the latest development trends and technologies to
+              innovative projects.
             </li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description: (
-        <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
+    "React/React Native/Next.js/Remix",
     "TypeScript",
     "Tailwind CSS",
     "Design Systems",
-    "WebRTC",
     "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "React Query",
+    "Zustand",
+    "Jest/Testing Library",
+    "Storybook",
+    "Git",
+    "Agile/Scrum",
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
-      description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      logo: MonitoLogo,
+      title: "Jgalianoz Website",
+      techStack: ["Astro", "Tailwind", "Vercel"],
+      description: "A personal website showcasing my portfolio.",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "jgalianoz-website",
+        href: "https://jgalianoz-website.vercel.app/",
       },
     },
     {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
-      description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      logo: ConsultlyLogo,
+      title: "QR Code Generator",
+      techStack: ["Javascript"],
+      description: "An extension that you can use to generate a QR Code.",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
-    },
-    {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      logo: MonitoLogo,
-      link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "qr-code-generator",
+        href: "https://marketplace.visualstudio.com/items?itemName=jgalianoz.qr-generator",
       },
     },
   ],
